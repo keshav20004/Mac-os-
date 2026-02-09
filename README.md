@@ -1,4 +1,4 @@
-# 🚀 Keshav Bajpai - MacOS Interactive Portfolio OS
+# Keshav Bajpai - MacOS Interactive Portfolio OS
 
 Welcome to my professional portfolio, reimagined as a fully functional, 3D-enhanced operating system inspired by MacOS. Built with cutting-edge web technologies, this project showcases my journey as an **AI Engineer** and **Full Stack Developer**.
 
