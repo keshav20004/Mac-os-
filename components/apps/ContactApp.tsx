@@ -22,7 +22,7 @@ export const ContactApp: React.FC = () => {
 
         <div className="space-y-6">
           <ContactItem icon={Mail} label="Email" value="ikeshav62@gmail.com" link="mailto:ikeshav62@gmail.com" />
-          <ContactItem icon={Phone} label="Phone" value="+91 9451363788" link="tel:+919451363788" />
+
           <ContactItem icon={MapPin} label="Location" value="Lucknow, India" />
         </div>
 
@@ -42,58 +42,57 @@ export const ContactApp: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
               <label className="text-xs font-bold uppercase tracking-wider text-gray-400">Name</label>
-              <input 
+              <input
                 required
-                type="text" 
+                type="text"
                 placeholder="John Doe"
                 className="w-full bg-white/5 border border-white/10 rounded-lg py-3 px-4 outline-none focus:border-blue-500 transition-colors"
                 value={formData.name}
-                onChange={e => setFormData({...formData, name: e.target.value})}
+                onChange={e => setFormData({ ...formData, name: e.target.value })}
               />
             </div>
             <div className="space-y-2">
               <label className="text-xs font-bold uppercase tracking-wider text-gray-400">Email</label>
-              <input 
+              <input
                 required
-                type="email" 
+                type="email"
                 placeholder="john@example.com"
                 className="w-full bg-white/5 border border-white/10 rounded-lg py-3 px-4 outline-none focus:border-blue-500 transition-colors"
                 value={formData.email}
-                onChange={e => setFormData({...formData, email: e.target.value})}
+                onChange={e => setFormData({ ...formData, email: e.target.value })}
               />
             </div>
           </div>
 
           <div className="space-y-2">
             <label className="text-xs font-bold uppercase tracking-wider text-gray-400">Subject</label>
-            <input 
+            <input
               required
-              type="text" 
+              type="text"
               placeholder="Collaboration Opportunity"
               className="w-full bg-white/5 border border-white/10 rounded-lg py-3 px-4 outline-none focus:border-blue-500 transition-colors"
               value={formData.subject}
-              onChange={e => setFormData({...formData, subject: e.target.value})}
+              onChange={e => setFormData({ ...formData, subject: e.target.value })}
             />
           </div>
 
           <div className="space-y-2">
             <label className="text-xs font-bold uppercase tracking-wider text-gray-400">Message</label>
-            <textarea 
+            <textarea
               required
               rows={6}
               placeholder="Tell me about your project..."
               className="w-full bg-white/5 border border-white/10 rounded-lg py-3 px-4 outline-none focus:border-blue-500 transition-colors resize-none"
               value={formData.message}
-              onChange={e => setFormData({...formData, message: e.target.value})}
+              onChange={e => setFormData({ ...formData, message: e.target.value })}
             />
           </div>
 
-          <button 
+          <button
             type="submit"
             disabled={isSent}
-            className={`w-full py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all shadow-lg active:scale-[0.98] ${
-              isSent ? 'bg-green-600 hover:bg-green-600' : 'bg-blue-600 hover:bg-blue-500'
-            }`}
+            className={`w-full py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-all shadow-lg active:scale-[0.98] ${isSent ? 'bg-green-600 hover:bg-green-600' : 'bg-blue-600 hover:bg-blue-500'
+              }`}
           >
             {isSent ? (
               <>
